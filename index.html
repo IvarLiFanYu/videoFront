@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>首页</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css"/>
+    <link rel="stylesheet" href="assert/css/me.css"/>
+    <script src="assert/js/jquery.min.js"></script>
+    <script src="assert/js/snow.js"></script>
+</head>
+<body>
+    <!--导航栏-->
+    <div class="navbar uk-container-expand" style="width: 100%; height: 100px; background-image: url('assert/images/topbackground.png')">
+            <div>
+                <nav class="uk-navbar-container uk-margin uk-navbar-transparent" uk-navbar="mode: click">
+                    <div class="uk-navbar-left margin-left-big ">
+                        <ul class="uk-navbar-nav">
+                            <li><a href="index.html" target="_self" style="margin-right:10px;background-image: url('assert/images/logo.png');width: 176px;border-radius: 10px;"></a></li>
+                            <li><a href="register.html" target="_self"><span class="afont-medium ">点我注册</span></a></li>
+                            <li><a href="login.html" target="_self"><span class="afont-medium ">登录</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="uk-navbar-center">
+                        <ul class="uk-navbar-nav">
+                            <li class="uk-active"><a href="#"><span class="afont-medium ">番剧</span></a></li>
+                            <li><a href="#"><span class="afont-medium ">动漫</span></a></li>
+                            <li><a href="#"><span class="afont-medium ">直播</span></a></li>
+                        </ul>
+                    </div>
+                    <div id="searchForm" class="uk-margin">
+                        <form class="uk-search uk-search-default">
+                            <span class="uk-search-icon-flip" uk-search-icon></span>
+                            <input class="uk-search-input" type="search" placeholder="Search...">
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    <!--首部区域-->
+    <div id="top" class="margin-left-20 margin-bottom-20 margin-top-20" style="width: 1190px; height: 100px;/* border: 1px solid red;*/">
+        <div id="top_left" class="margin-right-tiny" style="width: 180px; height: 100px; /*border: 1px solid darkgreen; */display:inline-block">
+            <ul>
+                <li>
+                    <span uk-icon="icon:home"></span>
+                    <a href="#"><span class="afont-top">首页</span></a>
+                </li>
+                <li>
+                    <span uk-icon="icon:star"></span>
+                    <a href="#"><span  class="afont-top">动态</span></a>
+                </li>
+                <li>
+                    <span uk-icon="icon: bolt"></span>
+                    <a href="#"><span  class="afont-top">排行榜</span></a>
+                </li>
+            </ul>
+        </div>
+        <div id="top_center" class="margin-right-tiny" style="line-height: 50px; vertical-align:top; width: 630px; height: 100px; /*border: 1px solid indianred*/;  display:inline-block">
+             <div class="uk-text-left" ukgrid>
+                     <a href="#" class="margin-right-7"><span class="afont-top">科技<span class="uk-badge top_a_style">120</span></span></a>
+                     <a href="#" class="margin-right-7"><span class="afont-top">生活<span class="uk-badge top_a_style">150</span></span></a>
+                     <a href="#" class="margin-right-7"><span class="afont-top">鬼畜<span class="uk-badge top_a_style">160</span></span></a>
+                     <a href="#" class="margin-right-7"><span class="afont-top">数码<span class="uk-badge top_a_style">109</span></span></a>
+                     <a href="#" class="margin-right-7"><span class="afont-top">时尚<span class="uk-badge top_a_style">999</span></span></a>
+                     <a href="#" class="margin-right-7"><span class="afont-top">影视<span class="uk-badge top_a_style">999</span></span></a>
+                     <a href="#" class="margin-right-7"><span class="afont-top">舞蹈<span class="uk-badge top_a_style">100</span></span></a>
+                     <a href="#" class="margin-right-7"><span class="afont-top">游戏<span class="uk-badge top_a_style">990</span></span></a>
+                     <a href="#" class="margin-right-7"><span class="afont-top">科技<span class="uk-badge top_a_style">120</span></span></a>
+                     <a href="#" class="margin-right-7"><span class="afont-top">生活<span class="uk-badge top_a_style">150</span></span></a>
+                </div>
+        </div>
+        <div id="top_right" style="vertical-align:top;  width: 345px; height: 100px; /*border: 1px solid blueviolet;*/ display: inline-block">
+            <ul>
+                <li class="margin-right-7 line-height-47">
+                    <span uk-icon="icon:home"></span>
+                    <a href="#"><span class="afont-top">专栏</span></a>
+                </li>
+                <li class="margin-right-7 line-height-47">
+                    <span uk-icon="icon:star"></span>
+                    <a href="#"><span  class="afont-top">直播</span></a>
+                </li>
+                <li class="margin-right-7 line-height-47">
+                    <span uk-icon="icon: bolt"></span>
+                    <a href="#"><span  class="afont-top">活动</span></a>
+                </li>
+                <li class="margin-right-7 line-height-47">
+                    <span uk-icon="icon:home"></span>
+                    <a href="#"><span class="afont-top">专题</span></a>
+                </li>
+                <li class="margin-right-7 line-height-47">
+                    <span uk-icon="icon:star"></span>
+                    <a href="#"><span  class="afont-top">小黑屋</span></a>
+                </li>
+                <li class="margin-right-7 line-height-47">
+                    <span uk-icon="icon: bolt"></span>
+                    <a href="#"><span  class="afont-top">音乐PLUS</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--轮播-->
+    <div id="lunbo" class="margin-left-20 margin-bottom-20" style="width: 1205px; height: 284px; /*border: 1px solid green;*/">
+        <div id="lunbo_left" class="margin-top-20 margin-right-tiny" style="vertical-align:top; width: 550px; height: 245px; /*border: 1px solid blueviolet;*/ display: inline-block">
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="animation: scale">
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <img src="assert/images/lunbo01.webp" alt="" uk-cover>
+                    </li>
+                    <li>
+                        <img src="assert/images/lunbo02.webp" alt="" uk-cover>
+                    </li>
+                    <li>
+                        <img src="assert/images/lunbo03.webp" alt="" uk-cover>
+                    </li>
+                    <li>
+                        <img src="assert/images/lunbo04.webp" alt="" uk-cover>
+                    </li>
+                    <li>
+                        <img src="assert/images/lunbo05.webp" alt="" uk-cover>
+                    </li>
+                </ul>
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+            </div>
+        </div>
+        <div id="lunbo_right" style="width: 630px; height: 245px; /*border: 1px solid red;*/ display: inline-block;margin-top: 20px;">
+            <div class="lunbo_single" style="background-image: url('assert/images/01.webp'); margin-right: 6px;float: left;width: 206px; height: 116px; /*border: 1px solid red;*/ display: inline-block">
+                <div class="padding-top-left-93"><a href="#" style="" class="font-10-blue">【翻唱/生】オートファジー cover</a></div>
+            </div>
+            <div class="lunbo_single" style="background-image: url('assert/images/02.webp'); margin-right: 6px; float: left;width: 206px; height: 116px; /*border: 1px solid red;*/ display: inline-block">
+                <div class="padding-top-left-93"><a href="#" style="" class="font-10-blue">【翻唱/生】オートファジー cover</a></div>
+            </div>
+            <div class="lunbo_single" style="background-image: url('assert/images/03.webp'); float: right;width: 206px; height: 116px; /*border: 1px solid red; */display: inline-block">
+                <div class="padding-top-left-93"><a href="#" style="" class="font-10-blue">【翻唱/生】オートファジー cover</a></div>
+            </div>
+            <div class="lunbo_single" style="clear: both;margin-top: 12px;margin-right: 6px;background-image: url('assert/images/04.webp'); float: left;width: 206px; height: 116px; /*border: 1px solid red;*/ display: inline-block">
+                <div class="padding-top-left-93"><a href="#" style="" class="font-10-blue">【翻唱/生】オートファジー cover</a></div>
+            </div>
+            <div class="lunbo_single" style="margin-top: 12px;margin-right: 6px;background-image: url('assert/images/05.webp'); float: left;width: 206px; height: 116px; /*border: 1px solid red;*/ display: inline-block">
+                <div class="padding-top-left-93"><a href="#" style="" class="font-10-blue">【翻唱/生】オートファジー cover</a></div>
+            </div>
+            <div class="lunbo_single" style="margin-top: 12px;background-image: url('assert/images/06.webp'); float: right;width: 206px; height: 116px; /*border: 1px solid red;*/ display: inline-block">
+                <div class="padding-top-left-93"><a href="#" style="" class="font-10-blue">【翻唱/生】オートファジー cover</a></div>
+            </div>
+        </div>
+    </div>
+    <!--广告-->
+    <div id="ad" class="margin-left-20 margin-bottom-20" style=" width: 1190px; height: 86px; /*border: 1px solid orange;*/">
+        <a href="#"><img src="assert/images/ad.jpg" alt=""></a>
+    </div>
+    <!--容器-->
+    <div id="content" class="margin-left-20" style="width: 1190px; /*border: 1px solid black;*/">
+        <div id="content_top" class="margin-left-20 margin-bottom-20" style="width: 1160px; height: 47px;    margin-top: 40px; /*border: 1px solid blue;*/">
+            <div id="content_top_left" style="float:left; width: 314px; height: 45px; /*border: 1px solid black;*/">
+                <h3 style="display: inline; margin-right: 5px; vertical-align: middle;">翻唱</h3>
+                <ul>
+                    <li class="margin-right-7 line-height-47">
+                        <span uk-icon="icon:home"></span>
+                        <a href="#"><span class="font-10">国人男声</span></a>
+                    </li>
+                    <li class="margin-right-7 line-height-47">
+                        <span uk-icon="icon:star"></span>
+                        <a href="#"><span  class="font-10">国人女声</span></a>
+                    </li>
+                    <li class="margin-right-7 line-height-47">
+                        <span uk-icon="icon: bolt"></span>
+                        <a href="#"><span  class="font-10">中文翻唱</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div id="content_top_right" style="float:right; width: 430px; height: 45px; /*border: 1px solid hotpink;*/     line-height: 40px;">
+                <a href="#" style="color: #000000bf; border: none; border-radius: 3px; margin-left: 350px; font-size: 18px;">> 更多</a>
+            </div>
+        </div>
+        <div id="content_bottom" class="margin-left-20 margin-bottom-20" style="width: 1165px; height: 430px; /*border: 1px solid orangered;*/">
+            <div class="vedio_left margin-bottom-20 margin-right-small" style=" float: left; width: 210px; height: 190px; /*border: 1px solid red;*/ display: inline-block">
+           <div class="vedio_show_image" style="margin-top: 22px;margin-bottom: 5px;margin-left: 20px; width: 160px; height: 100px">
+               <a href="#"><img style="border-radius: 5px;" src="assert/images/001.webp" alt=""></a>
+           </div>
+           <div class="vedio_show_info">
+               <h5 style="    margin-left: 20px;">【洛少爷】溯源之光</h5>
+           </div>
+           <div class="vedio_show_star_play">
+               <div id="vedio_show_star_play_left" style="float: left;margin-top: -20px;margin-left: 20px;">
+                   <span class="font-10-blue">收藏数 4000</span>
+               </div>
+               <div id="vedio_show_star_play_right"  style="float: right;margin-right: 30px;margin-top: -20px;">
+                   <span class="font-10-blue">点击数 3000</span>
+               </div>
+           </div>
+       </div>
+            <div class="vedio_left margin-bottom-20 margin-right-small" style="float: left; width: 210px; height: 190px; /*border: 1px solid red;*/ display: inline-block">
+               <div class="vedio_show_image" style="margin-top: 22px;margin-bottom: 5px;margin-left: 20px; width: 160px; height: 100px">
+                   <a href="#"><img style="border-radius: 5px;" src="assert/images/002.webp" alt=""></a>
+               </div>
+               <div class="vedio_show_info">
+                   <h5 style="    margin-left: 20px;">【洛少爷】溯源之光</h5>
+               </div>
+               <div class="vedio_show_star_play">
+                   <div class="vedio_show_star_play_left" style="float: left;margin-top: -20px;margin-left: 20px;">
+                       <span class="font-10-blue">收藏数 4000</span>
+                   </div>
+                   <div class="vedio_show_star_play_right"  style="float: right;margin-right: 30px;margin-top: -20px;">
+                       <span class="font-10-blue">点击数 3000</span>
+                   </div>
+               </div>
+           </div>
+            <div class="vedio_left margin-bottom-20 margin-right-small" style="float: left; width: 210px; height: 190px; /*border: 1px solid red;*/ display: inline-block">
+               <div class="vedio_show_image" style="margin-top: 22px;margin-bottom: 5px;margin-left: 20px; width: 160px; height: 100px">
+                   <a href="#"><img style="border-radius: 5px;" src="assert/images/003.webp" alt=""></a>
+               </div>
+               <div class="vedio_show_info">
+                   <h5 style="    margin-left: 20px;">【洛少爷】溯源之光</h5>
+               </div>
+               <div class="vedio_show_star_play">
+                   <div class="vedio_show_star_play_left" style="float: left;margin-top: -20px;margin-left: 20px;">
+                       <span class="font-10-blue">收藏数 4000</span>
+                   </div>
+                   <div class="vedio_show_star_play_right"  style="float: right;margin-right: 30px;margin-top: -20px;">
+                       <span class="font-10-blue">点击数 3000</span>
+                   </div>
+               </div>
+           </div>
+            <div class="vedio_left margin-bottom-20 margin-right-small" style="float: left; width: 210px; height: 190px; /*border: 1px solid red;*/ display: inline-block">
+               <div class="vedio_show_image" style="margin-top: 22px;margin-bottom: 5px;margin-left: 20px; width: 160px; height: 100px">
+                   <a href="#"><img style="border-radius: 5px;" src="assert/images/004.webp" alt=""></a>
+               </div>
+               <div class="vedio_show_info">
+                   <h5 style="    margin-left: 20px;">【洛少爷】溯源之光</h5>
+               </div>
+               <div class="vedio_show_star_play">
+                   <div class="vedio_show_star_play_left" style="float: left;margin-top: -20px;margin-left: 20px;">
+                       <span class="font-10-blue">收藏数 4000</span>
+                   </div>
+                   <div class="vedio_show_star_play_right"  style="float: right;margin-right: 30px;margin-top: -20px;">
+                       <span class="font-10-blue">点击数 3000</span>
+                   </div>
+               </div>
+           </div>
+            <div class="vedio_left margin-bottom-20 "  style="float: right; width: 210px; height: 190px; /*border: 1px solid red; */display: inline-block">
+               <div class="vedio_show_image" style="margin-top: 22px;margin-bottom: 5px;margin-left: 20px; width: 160px; height: 100px">
+                   <a href="#"><img style="border-radius: 5px;" src="assert/images/005.webp" alt=""></a>
+               </div>
+               <div class="vedio_show_info">
+                   <h5 style="    margin-left: 20px;">【洛少爷】溯源之光</h5>
+               </div>
+               <div class="vedio_show_star_play">
+                   <div class="vedio_show_star_play_left" style="float: left;margin-top: -20px;margin-left: 20px;">
+                       <span class="font-10-blue">收藏数 4000</span>
+                   </div>
+                   <div class="vedio_show_star_play_right"  style="float: right;margin-right: 30px;margin-top: -20px;">
+                       <span class="font-10-blue">点击数 3000</span>
+                   </div>
+               </div>
+           </div>
+            <div class="vedio_left margin-bottom-20 margin-right-small" style="float: left; width: 210px; height: 190px; /*border: 1px solid red;*/ display: inline-block">
+               <div class="vedio_show_image" style="margin-top: 22px;margin-bottom: 5px;margin-left: 20px; width: 160px; height: 100px">
+                   <a href="#"><img style="border-radius: 5px;" src="assert/images/004.webp" alt=""></a>
+               </div>
+               <div class="vedio_show_info">
+                   <h5 style="    margin-left: 20px;">【洛少爷】溯源之光</h5>
+               </div>
+               <div class="vedio_show_star_play">
+                   <div class="vedio_show_star_play_left" style="float: left;margin-top: -20px;margin-left: 20px;">
+                       <span class="font-10-blue">收藏数 4000</span>
+                   </div>
+                   <div class="vedio_show_star_play_right"  style="float: right;margin-right: 30px;margin-top: -20px;">
+                       <span class="font-10-blue">点击数 3000</span>
+                   </div>
+               </div>
+           </div>
+            <div class="vedio_left margin-bottom-20 margin-right-small" style="float: left; width: 210px; height: 190px; /*border: 1px solid red;*/ display: inline-block">
+               <div class="vedio_show_image" style="margin-top: 22px;margin-bottom: 5px;margin-left: 20px; width: 160px; height: 100px">
+                   <a href="#"><img style="border-radius: 5px;" src="assert/images/003.webp" alt=""></a>
+               </div>
+               <div class="vedio_show_info">
+                   <h5 style="    margin-left: 20px;">【洛少爷】溯源之光</h5>
+               </div>
+               <div class="vedio_show_star_play">
+                   <div class="vedio_show_star_play_left" style="float: left;margin-top: -20px;margin-left: 20px;">
+                       <span class="font-10-blue">收藏数 4000</span>
+                   </div>
+                   <div class="vedio_show_star_play_right"  style="float: right;margin-right: 30px;margin-top: -20px;">
+                       <span class="font-10-blue">点击数 3000</span>
+                   </div>
+               </div>
+           </div>
+            <div class="vedio_left margin-bottom-20 margin-right-small" style="float: left; width: 210px; height: 190px; /*border: 1px solid red;*/ display: inline-block">
+               <div class="vedio_show_image" style="margin-top: 22px;margin-bottom: 5px;margin-left: 20px; width: 160px; height: 100px">
+                   <a href="#"><img style="border-radius: 5px;" style="border-radius: 5px;" src="assert/images/002.webp" alt=""></a>
+               </div>
+               <div class="vedio_show_info">
+                   <h5 style="margin-left: 20px;">【洛少爷】溯源之光</h5>
+               </div>
+               <div class="vedio_show_star_play">
+                   <div class="vedio_show_star_play_left" style="float: left;margin-top: -20px;margin-left: 20px;">
+                       <span class="font-10-blue">收藏数 4000</span>
+                   </div>
+                   <div class="vedio_show_star_play_right"  style="float: right;margin-right: 30px;margin-top: -20px;">
+                       <span class="font-10-blue">点击数 3000</span>
+                   </div>
+               </div>
+           </div>
+            <div class="vedio_left margin-bottom-20 margin-right-small" style="float: left; width: 210px; height: 190px; /*border: 1px solid red;*/ display: inline-block">
+               <div class="vedio_show_image" style="margin-top: 22px;margin-bottom: 5px;margin-left: 20px; width: 160px; height: 100px">
+                   <a href="#"><img style="border-radius: 5px;" src="assert/images/005.webp" alt=""></a>
+               </div>
+               <div class="vedio_show_info">
+                   <h5 style="    margin-left: 20px;">【洛少爷】溯源之光</h5>
+               </div>
+               <div class="vedio_show_star_play">
+                   <div class="vedio_show_star_play_left" style="float: left;margin-top: -20px;margin-left: 20px;">
+                       <span class="font-10-blue">收藏数 4000</span>
+                   </div>
+                   <div class="vedio_show_star_play_right"  style="float: right;margin-right: 30px;margin-top: -20px;">
+                       <span class="font-10-blue">点击数 3000</span>
+                   </div>
+               </div>
+           </div>
+            <div class="vedio_left margin-bottom-20 "  style="float: right; width: 210px; height: 190px; /*border: 1px solid red;*/ display: inline-block">
+           <div class="vedio_show_image" style="margin-top: 22px;margin-bottom: 5px;margin-left: 20px; width: 160px; height: 100px">
+               <a href="#"><img style="border-radius: 5px;" src="assert/images/001.webp" alt=""></a>
+           </div>
+           <div class="vedio_show_info">
+               <h5 style="    margin-left: 20px;">【洛少爷】溯源之光</h5>
+           </div>
+           <div class="vedio_show_star_play">
+               <div class="vedio_show_star_play_left" style="float: left;margin-top: -20px;margin-left: 20px;">
+                   <span class="font-10-blue">收藏数 4000</span>
+               </div>
+               <div class="vedio_show_star_play_right"  style="float: right;margin-right: 30px;margin-top: -20px;">
+                   <span class="font-10-blue">点击数 3000</span>
+               </div>
+           </div>
+        </div>
+        </div>
+    </div>
+    <!--雪花特效容器-->
+    <div class="snow-container" style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;">
+    </div>
+	<script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
+</body>
+</html>

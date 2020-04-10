@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/css/uikit.min.css"/>
+    <link rel="stylesheet" href="assert/css/me.css"/>
+    <script src="assert/js/jquery.min.js"></script>
+	<script src="assert/js/formcheck.js"></script>
+    <script src="assert/js/snow.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.2.2/dist/js/uikit-icons.min.js"></script>
+</head>
+<body style="height:925px !important;">
+    <div class="navbar uk-container-expand" style="width: 100%; height: 100px; background-image: url('assert/images/topbackground.png')">
+        <div>
+            <nav class="uk-navbar-container uk-margin uk-navbar-transparent" uk-navbar="mode: click">
+                <div class="uk-navbar-left margin-left-big ">
+                    <ul class="uk-navbar-nav">
+                        <li><a href="index.html" target="_self" style="margin-right:10px;background-image: url('assert/images/logo.png');width: 176px;border-radius: 10px;"></a></li>
+                        <li><a href="register.html" target="_self"><span class="afont-medium ">点我注册</span></a></li>
+                        <li><a href="login.html" target="_self"><span class="afont-medium ">登录</span></a></li>
+                    </ul>
+                </div>
+                <div class="uk-navbar-center">
+                    <ul class="uk-navbar-nav">
+                        <!--<li class="uk-active"><a href="#">番剧</a></li>-->
+                        <li class="uk-active"><a href="#"><span class="afont-medium ">番剧</span></a></li>
+                        <li><a href="#"><span class="afont-medium ">动漫</span></a></li>
+                        <li><a href="#"><span class="afont-medium ">直播</span></a></li>
+                    </ul>
+                </div>
+                <div id="searchForm" class="uk-margin">
+                    <form class="uk-search uk-search-default">
+                        <span class="uk-search-icon-flip" uk-search-icon></span>
+                        <input class="uk-search-input" type="search" placeholder="Search...">
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--首部区域-->
+    <div id="top" class="margin-left-20 margin-bottom-20 margin-top-20" style="width: 1190px; height: 100px;/* border: 1px solid red;*/">
+        <div id="top_left" class="margin-right-tiny" style="width: 180px; height: 100px; /*border: 1px solid darkgreen; */display:inline-block">
+            <ul>
+                <li>
+                    <span uk-icon="icon:home"></span>
+                    <a href="#"><span class="afont-top">首页</span></a>
+                </li>
+                <li>
+                    <span uk-icon="icon:star"></span>
+                    <a href="#"><span  class="afont-top">动态</span></a>
+                </li>
+                <li>
+                    <span uk-icon="icon: bolt"></span>
+                    <a href="#"><span  class="afont-top">排行榜</span></a>
+                </li>
+            </ul>
+        </div>
+        <div id="top_center" class="margin-right-tiny" style="line-height: 50px; vertical-align:top; width: 630px; height: 100px; /*border: 1px solid indianred*/;  display:inline-block">
+            <div class="uk-text-left" ukgrid>
+                <a href="#" class="margin-right-7"><span class="afont-top">科技<span class="uk-badge top_a_style">120</span></span></a>
+                <a href="#" class="margin-right-7"><span class="afont-top">生活<span class="uk-badge top_a_style">150</span></span></a>
+                <a href="#" class="margin-right-7"><span class="afont-top">鬼畜<span class="uk-badge top_a_style">160</span></span></a>
+                <a href="#" class="margin-right-7"><span class="afont-top">数码<span class="uk-badge top_a_style">109</span></span></a>
+                <a href="#" class="margin-right-7"><span class="afont-top">时尚<span class="uk-badge top_a_style">999</span></span></a>
+                <a href="#" class="margin-right-7"><span class="afont-top">影视<span class="uk-badge top_a_style">999</span></span></a>
+                <a href="#" class="margin-right-7"><span class="afont-top">舞蹈<span class="uk-badge top_a_style">100</span></span></a>
+                <a href="#" class="margin-right-7"><span class="afont-top">游戏<span class="uk-badge top_a_style">990</span></span></a>
+                <a href="#" class="margin-right-7"><span class="afont-top">科技<span class="uk-badge top_a_style">120</span></span></a>
+                <a href="#" class="margin-right-7"><span class="afont-top">生活<span class="uk-badge top_a_style">150</span></span></a>
+            </div>
+        </div>
+        <div id="top_right" style="vertical-align:top;  width: 345px; height: 100px; /*border: 1px solid blueviolet;*/ display: inline-block">
+            <ul>
+                <li class="margin-right-7 line-height-47">
+                    <span uk-icon="icon:home"></span>
+                    <a href="#"><span class="afont-top">专栏</span></a>
+                </li>
+                <li class="margin-right-7 line-height-47">
+                    <span uk-icon="icon:star"></span>
+                    <a href="#"><span  class="afont-top">直播</span></a>
+                </li>
+                <li class="margin-right-7 line-height-47">
+                    <span uk-icon="icon: bolt"></span>
+                    <a href="#"><span  class="afont-top">活动</span></a>
+                </li>
+                <li class="margin-right-7 line-height-47">
+                    <span uk-icon="icon:home"></span>
+                    <a href="#"><span class="afont-top">专题</span></a>
+                </li>
+                <li class="margin-right-7 line-height-47">
+                    <span uk-icon="icon:star"></span>
+                    <a href="#"><span  class="afont-top">小黑屋</span></a>
+                </li>
+                <li class="margin-right-7 line-height-47">
+                    <span uk-icon="icon: bolt"></span>
+                    <a href="#"><span  class="afont-top">音乐PLUS</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="loginForm">
+        <div class="uk-card uk-card-default uk-card-hover uk-child-width-1-2@s uk-margin" uk-grid>
+            <div class="uk-card-media-left uk-cover-container">
+                <img src="assert/images/login.jpg" alt="" uk-cover>
+                <canvas width="600" height="400"></canvas>
+            </div>
+            <div>
+                <div class="uk-card-body ">
+                    <h2 class="uk-align-center" style="font-family: Comic Sans MS;color: #e07539;font-weight:bolder ">Please Login</h2>
+                    <div style="margin-top: 55px">
+                        <form method="post" action="index.html" onsubmit="return isTrue()" >
+                            <div class="uk-margin">
+                                <div class="uk-inline">
+                                    <span class="uk-form-icon" uk-icon="icon: user"></span>
+                                    <input name="name" onblur="validateUsername(this)" placeholder="用户名(必填且>6字符)" class="uk-input" type="text">
+                                </div>
+                            </div>
+                            <div class="uk-margin">
+                                <div class="uk-inline">
+                                    <span class="uk-form-icon" uk-icon="icon: lock"></span>
+                                    <input name="password" onblur="validatePassword(this)" placeholder="密码(必填)" class="uk-input" type="password">
+                                </div>
+                            </div>
+                            <div class="uk-margin uk-grid-small uk-child-width-auto uk-grid">
+                                <label><input class="uk-checkbox" type="checkbox" checked> 记住我</label>
+                            </div>
+                            <div class="uk-margin">
+                                <div class="uk-inline">
+                                    <input value="登录" name="submit" class="uk-button uk-button-default" type="submit">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="usernameMessegeDiv" style="position: absolute;width: 110px;font-family: 'Microsoft YaHei UI' !important;margin-left: 906px; color: red; font-weight: bold; height: 20px;display: none; margin-top: -281px;">用户名必填</div>
+    <div id="usernameValidateMessegeDiv" style="position: absolute; width: 110px;font-family: 'Microsoft YaHei UI' !important;color: red;margin-left: 906px;font-weight: bold;height: 20px;margin-top: -281px;display: none;margin-left: 906px;">用户名非法</div>
+    <div id="passwordMessegeDiv" style="position: absolute;width: 95px;font-family: 'Microsoft YaHei UI' !important;height: 20px;margin-left: 906px;color: red;font-weight: bold;margin-bottom: 35px;display: none;margin-top: -220px;">密码必填</div>
+    <!--雪花特效容器-->
+    <div class="snow-container" style="position:fixed;top:0;left:0;width:100%;height:100%;pointer-events:none;">
+    </div>
+</body>
+</html>
